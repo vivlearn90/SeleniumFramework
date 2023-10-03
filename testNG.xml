@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumFramework">
+	<listeners>
+		<listener class-name="com.app.utilities.Reporting" />
+	</listeners>
+	<test name="Insurance Tests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.app.testCases.TC_LoginTest_001" />
+			<!--<class name="com.app.testCases.TC_LoginTestDD_002" />-->
+			<class name="com.app.testCases.TC_RequestQutoation_001" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
